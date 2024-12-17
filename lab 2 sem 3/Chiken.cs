@@ -11,7 +11,7 @@ namespace lab_2_sem_3
         
         public Chiken()
         {
-            _bird = new NotFly();
+            moveable = new NotFly();
         }
         public override string ToString()
         {

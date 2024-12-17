@@ -8,6 +8,6 @@ namespace lab_2_sem_3
 {
     public interface IMoveable
     {
-         void Move();
+        void Move();
     }
 }

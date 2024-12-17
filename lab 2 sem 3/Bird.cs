@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace lab_2_sem_3
 {
-    public class Bird : Animal, IFlyable
+    public class Bird : Animal
     {
-        protected IFlyable _bird; 
-
-        public void Fly()
+        public Bird()
         {
-            _bird.Fly();
-        }
+            base.moveable = new Flying();
+        } 
+
+
 
         public override string ToString()
         {

@@ -1,17 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace lab_2_sem_3
 {
-    public class Сrocodile : Amphibious
+    public class Сrocodile : Animal
     {
+       
+
         public Сrocodile()
         {
-            _amphibious = new walking();
-            __amphibious = new Swiming();
+            moveable = new Amphibious();
         }
 
         public override string ToString()

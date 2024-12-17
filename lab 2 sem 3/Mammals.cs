@@ -6,19 +6,11 @@ using System.Threading.Tasks;
 
 namespace lab_2_sem_3
 {
-    public class Mammals : Animal, IMoveable, ISwimable
+    public class Mammals : Animal
     {
-        protected IMoveable _mammals;
-        protected ISwimable __mammals;
-
-        public void Move()
+        public Mammals() 
         {
-            _mammals.Move();
-        }
-
-        public void Swim()
-        {
-            __mammals.Swim();
+            moveable = new Amphibious();
         }
         public override string ToString()
         {

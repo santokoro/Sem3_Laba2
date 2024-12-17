@@ -8,7 +8,7 @@ namespace lab_2_sem_3
 {
     public class Flying : IFlyable
     {
-        public void Fly()
+        public void Move()
         {
             Console.WriteLine("Летает");
         }

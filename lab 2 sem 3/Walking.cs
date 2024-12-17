@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab_2_sem_3
 {
-    public class walking : IMoveable
+    public class walking : IWalkable
     {
         public void Move()
         {

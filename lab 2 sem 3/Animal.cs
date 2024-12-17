@@ -6,23 +6,18 @@ using System.Threading.Tasks;
 
 namespace lab_2_sem_3
 {
-    public class Animal
+    public abstract class Animal: IMoveable
     {
-        protected IMoveable _animal;
-        protected ISwimable __animal;
+        protected  IMoveable moveable;
 
         public void Move()
         {
-            _animal.Move();
+            moveable.Move();
         }
 
-        public void Swim()
-        {
-            __animal.Swim();
-        }
         public override string ToString()
         {
-            return base.ToString() + "\nSubclass: Animal";
+            return "\nClass: Animal";
         }
     }
 }

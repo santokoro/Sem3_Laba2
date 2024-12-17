@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace lab_2_sem_3
 {
-    public interface ISwimable
+    public interface ISwimable : IMoveable
     {
-        void Swim();
+        
     }
 }

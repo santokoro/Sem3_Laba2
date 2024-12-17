@@ -8,7 +8,7 @@ namespace lab_2_sem_3
 {
     public class NotFly : IFlyable
     {
-        public void Fly()
+        public void Move()
         {
             Console.WriteLine("Не летает");
         }

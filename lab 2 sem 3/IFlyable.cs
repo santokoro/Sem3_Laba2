@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace lab_2_sem_3
 {
-    public interface IFlyable
+    public interface IFlyable: IMoveable
     {
-        void Fly();
+        
         
     }
 }

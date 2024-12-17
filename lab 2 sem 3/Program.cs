@@ -11,22 +11,24 @@ namespace lab_2_sem_3
         static void Main(string[] args)
         {
             
-            Chiken chiken = new Chiken();
+            Chiken chicken = new Chiken();
             Owl owl = new Owl();
             Сrocodile crocodile = new Сrocodile();
             Lion lion = new Lion();
 
 
-            owl.Fly();
-            Console.WriteLine(owl.ToString());
-            chiken.Fly();
-            Console.WriteLine(chiken.ToString());
-            crocodile.Move();
-            crocodile.Swim();
-            Console.WriteLine(crocodile.ToString());
-            lion.Move();
-            lion.Swim();
-            Console.WriteLine(lion.ToString());
+            List<Animal> Animals = new List<Animal>();
+            Animals.Add(crocodile);
+            Animals.Add(lion);
+            Animals.Add(chicken);
+            Animals.Add(owl);
+
+            foreach (Animal a in Animals)
+            {
+                Console.WriteLine(a.ToString());
+                a.Move();
+
+            }
 
 
         }

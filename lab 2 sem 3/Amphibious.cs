@@ -6,23 +6,25 @@ using System.Threading.Tasks;
 
 namespace lab_2_sem_3
 {
-    public class Amphibious : IMoveable, ISwimable
+    public class Amphibious : IMoveable
     {
-        protected IMoveable _amphibious;
-        protected ISwimable __amphibious;
+        public Amphibious() 
+        {
+            walkable = new walking();
+            swimable = new Swiming();
+        }
+        protected IWalkable walkable;
+        protected ISwimable swimable;
 
         public void Move()
         {
-            _amphibious.Move();
+            walkable.Move();
+            swimable.Move();
         }
-
-        public void Swim()
-        {
-            __amphibious.Swim();
-        }
+        
         public override string ToString()
         {
-            return base.ToString() + "\nSubclass: Amphibious";
+            return  "\nSubclass: Amphibious";
         }
     }
 }

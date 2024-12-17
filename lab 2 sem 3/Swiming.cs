@@ -8,7 +8,7 @@ namespace lab_2_sem_3
 {
     public class Swiming : ISwimable
     {
-        public void Swim()
+        public void Move()
         {
             Console.WriteLine("Плавает");
         }

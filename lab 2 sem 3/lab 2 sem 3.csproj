@@ -51,6 +51,7 @@
     <Compile Include="Flying.cs" />
     <Compile Include="IFlyable.cs" />
     <Compile Include="IMoveable.cs" />
+    <Compile Include="IWalkable.cs" />
     <Compile Include="ISwimable.cs" />
     <Compile Include="Lion.cs" />
     <Compile Include="Mammals.cs" />

@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace lab_2_sem_3
 {
-    public class Fish : Animal, ISwimable
+    public class Fish : Animal
     {
-        ISwimable _fish;
-
-        public void Swim()
+        public Fish() 
         {
-            _fish.Swim();
+            moveable = new Swiming();
         }
         public override string ToString()
         {
